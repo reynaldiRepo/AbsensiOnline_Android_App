@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Absensi Online 0.1</string>
+    <string name="login">Login</string>
+    <string name="masukan_id_karyawan">Masukan Id Karyawan</string>
+    <string name="id_karyawan">ID KARYAWAN</string>
+    <string name="nama">Nama</string>
+</resources>

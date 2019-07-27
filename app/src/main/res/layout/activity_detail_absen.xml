@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailAbsenActivity"
+    android:layout_centerVertical="true"
+    android:padding="2sp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false">
+
+        <ImageView
+            android:id="@+id/home_logo"
+            android:layout_width="134dp"
+            android:layout_height="121dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/apps_logo_round" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:id="@+id/bio_sec"
+        android:layout_below="@id/home_logo"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/section0">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DATA KARYAWAN"
+                android:padding="5dp"
+                android:id="@+id/id_0"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="center"
+                android:background="@drawable/border"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/section1"
+            android:layout_below="@id/section0"
+            android:background="@drawable/border">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/id_karyawan"
+            android:padding="5dp"
+            android:id="@+id/id_label"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/border"/>
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text=": "
+            android:padding="5dp"
+            android:id="@+id/id_tv"
+            android:layout_toRightOf="@+id/id_label"
+            android:textColor="@color/colorPrimary"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/section2"
+            android:layout_below="@+id/section1"
+            android:background="@drawable/border">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nama"
+                android:padding="5dp"
+                android:id="@+id/nama_label"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/border"/>
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:padding="5dp"
+                android:id="@+id/nama_tv"
+                android:layout_toRightOf="@+id/nama_label"
+                android:textColor="@color/colorPrimary"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/section3"
+            android:layout_below="@+id/section2"
+            android:background="@drawable/border">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Posisi"
+                android:padding="5dp"
+                android:id="@+id/jabatan_label"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/border"/>
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:padding="5dp"
+                android:id="@+id/jabatan_tv"
+                android:layout_toRightOf="@+id/jabatan_label"
+                android:textColor="@color/colorPrimary"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/section4"
+            android:layout_below="@+id/section3"
+            android:background="@drawable/border">
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:padding="5dp"
+                android:id="@+id/status_label"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/border"/>
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text=": Managerial Positition "
+                android:padding="5dp"
+                android:id="@+id/status_tv"
+                android:layout_toRightOf="@+id/status_label"
+                android:textColor="@color/colorPrimary"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bio_sec"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:backgroundTint="@color/blue">
+        <TextView
+            android:id="@+id/tanggal_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Today : dd-mm-yyyy"
+            android:textAlignment="center"
+            android:padding="2dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/jam_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Jam Masuk : 07.00"
+            android:textAlignment="center"
+            android:padding="2dp"
+            android:layout_below="@id/tanggal_masuk"
+            android:textColor="@color/white"/>
+        <Button
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jam_masuk"
+            android:background="@color/colorPrimary"
+            android:text="ABSEN"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:id="@+id/absen_btn"/>
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
